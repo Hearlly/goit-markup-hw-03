@@ -32,8 +32,10 @@
   h4,
   h5,
   h6,
+  li,
   p {
     margin: 0;
+    padding: 0;
   }
   
   html {
@@ -82,6 +84,7 @@
   .header{
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
+    padding: 24px;
   }
   
   .nav-container{
@@ -93,32 +96,23 @@
   .navbar-list{
     display: flex;
     align-items: center;
+    gap: 76px ;
   }
   
-  .navbar-item:not(:last-child){
-  margin-right: 40px;
-  }
   
   .navbar{
     display: flex;
-    margin-left: 76px;
-    margin-right: 40px;
+    gap: 40px;
   }
   
   .nav-contacts{
     display: flex;
+    gap: 40px;
   }
-  
-  .header-contact-item:not(:last-child) {
-    margin-right: 40px;
-  }
-
-
   
   .header-contact-item,
   .navbar-item{
     display: block;
-    padding: 32px 0 31px 0;
   }
   
   .logo{
@@ -129,6 +123,7 @@
     font-weight: 800;
     line-height: 21px; 
     letter-spacing: 0.54px;
+    text-transform: uppercase;
   }
 
   .logo span {
@@ -173,6 +168,10 @@
   
   .filter-button:focus{
     background: var(--ocean);
+  }
+
+  .hero-container {
+    gap: 40px;
   }
   
   .filter-button:hover{
@@ -263,10 +262,7 @@
   
   .group-list{
     display: flex;
-  }
-  
-  .group-item:not(:last-child){
-    margin-right: 30px;
+    justify-content: space-between;
   }
   
   .group-item{
